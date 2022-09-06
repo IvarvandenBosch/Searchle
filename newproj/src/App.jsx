@@ -48,7 +48,7 @@ function App() {
         <input type="button" value="Max results" onClick={event => setMaxShown(1000)}/>
       </div>
       <div className="margin-top">
-      {nameData.map((val, key) => {
+      {nameData.map((val, index) => {
         return <StrongText key={val.id} searchBy={searchBy} lastName={val.last_name} firstName={val.first_name} searchTerm={searchTerm}/>
       })} 
       </div>
