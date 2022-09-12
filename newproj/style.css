@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/product-sans');
+
 *
 {
     box-sizing: border-box;
@@ -24,6 +26,7 @@ input
     border-radius: 0;
     border: solid;
     border-width: 2px;
+    margin-right: 10px;
 }
 
 .name
@@ -78,4 +81,30 @@ select
 .see-more:hover
 {
     color: rgb(112, 112, 112);
+}
+
+h1
+{
+    font-family: 'Product Sans', sans-serif;
+    font-size: 4rem;
+}
+
+.red
+{
+    color: #EA4335;
+}
+
+.blue
+{
+    color: #4285F4;
+}
+
+.green
+{
+    color: #34A853;
+}
+
+.yellow
+{
+    color: #FBBC05;
 }

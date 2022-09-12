@@ -28,7 +28,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className="row">
+      <h1><span className="blue">S</span><span className="red">e</span><span className="yellow">a</span><span className="blue">r</span><span className="green">c</span><span className="red">h</span><span className="green">l</span><span className="yellow">e</span></h1>
+      <div>
       <input 
         type="text" 
         placeholder="search..." 
