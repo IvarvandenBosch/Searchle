@@ -8,7 +8,7 @@ function App() {
   const [searchBy, setSearchBy] = React.useState(true)
 
   // Sorts data in alphabetic order
-  const sortedArray = JSONDATA.sort((a, b) => a.first_name.localeCompare(b.first_name))
+  JSONDATA.sort((a, b) => a.first_name.localeCompare(b.first_name))
 
   const nameData = 
     JSONDATA.filter((val)=> {
@@ -28,7 +28,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1><span className="blue">S</span><span className="red">e</span><span className="yellow">a</span><span className="blue">r</span><span className="green">c</span><span className="red">h</span><span className="green">l</span><span className="yellow">e</span></h1>
+      <h1>
+        <span className="blue">S</span>
+        <span className="red">e</span>
+        <span className="yellow">a</span>
+        <span className="blue">r</span>
+        <span className="green">c</span>
+        <span className="red">h</span>
+        <span className="green">l</span>
+        <span className="yellow">e</span>
+      </h1>
       <div>
       <input 
         type="text" 
@@ -46,14 +55,14 @@ function App() {
         />
         <input value={setVal} type="button" onClick={handleClick} />
         {/* Sets maxShow to max value */}
-        <input type="button" value="Max results" onClick={event => setMaxShown(1000)}/>
+        <input type="button" value="Max results" onClick={() => setMaxShown(1000)}/>
       </div>
       <div className="margin-top">
       {nameData.map((val, index) => {
         return <StrongText key={val.id} searchBy={searchBy} lastName={val.last_name} firstName={val.first_name} searchTerm={searchTerm}/>
       })} 
       </div>
-      <p  className="see-more" onClick={event => setMaxShown(prevNum => (prevNum + 10))}>See more...</p>
+      <p  className="see-more" onClick={() => setMaxShown(prevNum => (prevNum + 10))}>See more...</p>
     </div>
   )
 }
