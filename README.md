@@ -1,5 +1,5 @@
 # What is Searchle?
-A react search bar with different features like searching by first and last name, bolded search values. 
+Searchle is a react search bar with different features like searching by first and last name, bolded search values. 
 This was one of my first React projects and I learned a lot from it.
 
 ## Preview
